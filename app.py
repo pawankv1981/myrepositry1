@@ -19,7 +19,7 @@ from fastapi.middleware.cors import CORSMiddleware
 app = FastAPI(title="MNIST CNN API")
 
 #Allow frontend access
-app.add.middleware(
+app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],
     allow_credentials=True,
